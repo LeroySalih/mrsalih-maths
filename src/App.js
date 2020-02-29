@@ -49,6 +49,15 @@ const PageHeading = styled.div`
   font-size: 2rem;
   color: red;
 `;
+
+const CardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
+const StyledCard = styled(Card)`
+  margin: 20px;
+`
 function App() {
 
   const classes = useStyles();
@@ -59,8 +68,47 @@ function App() {
         <Container>
           <PageHeading>Maths Materials</PageHeading>
           
-          
-          <Card className={classes.root} variant="outlined">
+          <CardContainer>
+         
+          <StyledCard className={classes.root} variant="outlined">
+            <CardContent>
+              <Typography className={classes.title} color="textSecondary" gutterBottom>
+                Algebra
+              </Typography>
+              <Typography variant="h5" component="h2">
+                Quadratic - Completing the Square
+              </Typography>
+              <Typography className={classes.pos} color="textSecondary">
+                Level 8/9
+              </Typography>
+              <Typography variant="body2" component="div">
+                <p>mr-salih questions</p>
+                <ul>
+                    <li><a target="_new" href="https://www.dropbox.com/s/95rpdrpruiaz6el/mr-salih-complete-the-square-questions.pdf?dl=0">Mr Salih Questions</a></li>
+                    <li><a target="_new" href="https://www.dropbox.com/s/wsr61x0ymor6jkb/mr-salih-completing-the-square-solutions%20.pdf?dl=0">Mr Salih Answers</a></li>
+                    <li><a target="_new" href="https://youtu.be/Y_Sb0iyQZ98">Mr Salih Video Solutions</a></li>
+                </ul>
+                
+
+                <p>Maths Genie Questions</p>
+                <ul>
+                  <li><a href="https://mathsgenie.co.uk/resources/9-completing-the-square.pdf">Maths Genie Questions</a></li>
+                  <li><a href="https://mathsgenie.co.uk/resources/9-completing-the-squareans.pdf">Maths Genie Solutions</a></li>
+                  <li></li>
+                </ul>
+
+                <p>Exam Questions</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                </ul>
+                
+                
+              </Typography>
+            </CardContent>
+          </StyledCard>
+
+          <StyledCard className={classes.root} variant="outlined">
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
                 Algebra
@@ -71,14 +119,14 @@ function App() {
               <Typography className={classes.pos} color="textSecondary">
                 Level 8/9
               </Typography>
-              <Typography variant="body2" component="p">
-                <p>mr-salih questions
+              <Typography variant="body2" component="div">
+                <p>mr-salih questions</p>
                 <ul>
                     <li><a target="_new" href="https://www.dropbox.com/s/wfv86t60z31dplo/mr-salih-questions.pdf?dl=0">Mr Salih Questions</a></li>
                     <li><a target="_new" href="https://www.dropbox.com/s/n957q9v9rel18xy/AlgebraicFractions-Solutions.pdf?dl=0">Mr Salih Answers</a></li>
                     <li><a target="_new" href="https://youtu.be/xG-oOQ4MNFY">Mr Salih Video Solutions</a></li>
                 </ul>
-                </p>
+                
 
                 <p>Maths Genie Questions</p>
                 <ul>
@@ -96,9 +144,10 @@ function App() {
                 
               </Typography>
             </CardContent>
-          </Card>
+          </StyledCard>
 
 
+          </CardContainer>
         </Container>
     </div>
   );
