@@ -69,6 +69,43 @@ function App() {
           <PageHeading>Maths Materials</PageHeading>
           
           <CardContainer>
+
+          <StyledCard className={classes.root} variant="outlined">
+            <CardContent>
+              <Typography className={classes.title} color="textSecondary" gutterBottom>
+                Number
+              </Typography>
+              <Typography variant="h5" component="h2">
+                Surds
+              </Typography>
+              <Typography className={classes.pos} color="textSecondary">
+                Level 7
+              </Typography>
+              <Typography variant="body2" component="div">
+                <p>mr-salih resources</p>
+                <ul>
+                    <li><a target="_new" href="https://youtu.be/Uc8CizADmhs">Mr Salih: How To Video</a></li>
+                    
+                </ul>
+                
+
+                <p>Maths Genie Questions</p>
+                <ul>
+                  <li><a href="https://mathsgenie.co.uk/resources/7-surds.pdf" target="new">Maths Genie Questions</a></li>
+                  <li><a href="https://mathsgenie.co.uk/resources/7-surdsans.pdf" target="new">Maths Genie Solutions</a></li>
+                  <li></li>
+                </ul>
+
+                <p>Exam Questions</p>
+                <ul>
+                  <li><a target="new" href="https://www.dropbox.com/s/w2ywk7zxigccqa5/Surds-Questions.pdf?dl=0">Exam Questions</a></li>
+                  <li><a target="new" href="https://www.dropbox.com/s/7vtcxwqgqcgm2l5/Surds-Answers.pdf?dl=0">Exam Answers</a></li>
+                  <li></li>
+                </ul>
+              </Typography>
+            </CardContent>
+          </StyledCard>
+ 
          
           <StyledCard className={classes.root} variant="outlined">
             <CardContent>
@@ -102,8 +139,6 @@ function App() {
                   <li></li>
                   <li></li>
                 </ul>
-                
-                
               </Typography>
             </CardContent>
           </StyledCard>
